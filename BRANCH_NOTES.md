@@ -118,3 +118,13 @@ e75cf1a1…, `startProjectionAccessPoint` 9889328e…, `P.channels()` 5ac1fc97�
   unaffected.
 - In this repo: `git branch -D package-konix-auto` locally and
   `git push origin --delete package-konix-auto` remotely. `main` was never modified.
+
+## Icon update (2026-11-26)
+
+- New app icon applied: Achour's gold shield emblem (road + steering wheel on navy),
+  cropped to the emblem with a navy margin. Replaced `ic_android_auto` rasters at all
+  densities (drawable 192, mdpi 48, hdpi 72, xhdpi 96, xxhdpi 144, xxxhdpi 192);
+  resource names and the manifest reference unchanged.
+- The package rename and the `awx.smali` credential XOR-key pin are unchanged.
+  Test APK rebuilt and re-signed (aausb, v3): SHA-256
+  f438716065e82c76dc914760b5463b8d5370ebf5c004f4cea2339181d7bd5cd1.
