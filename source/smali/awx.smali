@@ -36,13 +36,7 @@
 
     new-instance v2, Laww;
 
-    iget-object v3, p0, Lawx;->b:Landroid/content/Context;
-
-    invoke-virtual {v3}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
-
-    move-result-object v3
-
-    iget-object v3, v3, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
+    const-string v3, "com.google.android.embedded.projection"
 
     sget-object v4, Lj$/nio/charset/StandardCharsets;->US_ASCII:Ljava/nio/charset/Charset;
 

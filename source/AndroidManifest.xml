@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="31" android:compileSdkVersionCodename="Tiramisu" android:sharedUserId="" package="com.google.android.embedded.projection" platformBuildVersionCode="31" platformBuildVersionName="Tiramisu">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="31" android:compileSdkVersionCodename="Tiramisu" android:sharedUserId="" package="com.konix.auto" platformBuildVersionCode="31" platformBuildVersionName="Tiramisu">
     <uses-feature android:name="android.hardware.type.automotive" android:required="true"/>
     <uses-feature android:name="com.google.android.car.feature.AARECEIVER" android:required="true"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
@@ -56,7 +56,7 @@
     <application android:icon="@drawable/ic_android_auto" android:label="@string/app_name" android:name="com.google.android.apps.auto.aareceiver.AndroidAutoReceiverApp" android:theme="@style/AppTheme">
         <activity android:configChanges="keyboard|keyboardHidden|uiMode" android:exported="false" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.google.android.apps.auto.aareceiver.ui.AndroidAutoHeadunitActivity" android:taskAffinity="" android:windowSoftInputMode="stateHidden">
             <intent-filter>
-                <action android:name="com.google.android.embedded.projection.PROJECT"/>
+                <action android:name="com.konix.auto.PROJECT"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
             <meta-data android:name="distractionOptimized" android:value="true"/>
@@ -150,7 +150,7 @@
                 <action android:name="com.android.car.projection.action.STOP"/>
             </intent-filter>
         </receiver>
-        <provider android:authorities="com.google.android.apps.auto.aareceiver.cluster.clusterimageprovider" android:exported="true" android:name="com.google.android.apps.auto.aareceiver.cluster.ClusterImageProvider" android:writePermission="com.google.android.embedded.projection.NAV_IMAGE_WRITE_PERMISSION"/>
+        <provider android:authorities="com.google.android.apps.auto.aareceiver.cluster.clusterimageprovider" android:exported="true" android:name="com.google.android.apps.auto.aareceiver.cluster.ClusterImageProvider" android:writePermission="com.konix.auto.NAV_IMAGE_WRITE_PERMISSION"/>
         <meta-data android:name="com.google.android.gms.phenotype.registration.xml:com.google.android.apps.auto.aareceiver" android:resource="@xml/com_google_android_apps_auto_aareceiver_phenotype_release"/>
         <service android:enabled="false" android:exported="false" android:name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService" android:process="">
             <intent-filter>
@@ -221,8 +221,8 @@
                 <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
             </intent-filter>
         </receiver>
-        <provider android:authorities="com.google.android.embedded.projection.CarUiInstaller" android:directBootAware="true" android:exported="false" android:name="com.android.car.ui.core.CarUiInstaller" android:process="@string/car_ui_installer_process_name"/>
-        <provider android:authorities="com.google.android.embedded.projection.SearchResultsProvider" android:exported="true" android:name="com.android.car.ui.core.SearchResultsProvider" android:process="@string/car_ui_installer_process_name" android:readPermission="com.android.car.ui.READ_SEARCH_RESULTS"/>
+        <provider android:authorities="com.konix.auto.CarUiInstaller" android:directBootAware="true" android:exported="false" android:name="com.android.car.ui.core.CarUiInstaller" android:process="@string/car_ui_installer_process_name"/>
+        <provider android:authorities="com.konix.auto.SearchResultsProvider" android:exported="true" android:name="com.android.car.ui.core.SearchResultsProvider" android:process="@string/car_ui_installer_process_name" android:readPermission="com.android.car.ui.READ_SEARCH_RESULTS"/>
         <service android:enabled="false" android:exported="false" android:name="com.google.android.build.data.PropertiesServiceHolder" android:process="">
             <intent-filter>
                 <action android:name="com.google.android.build.data.Properties"/>
