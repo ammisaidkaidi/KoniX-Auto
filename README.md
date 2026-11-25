@@ -14,8 +14,7 @@ screens, a first-run photo gallery with rotating backgrounds — and Achour's br
 | Folder | Contents |
 |---|---|
 | `source/` | The **current build tree** (apktool project) that produced `KoniX-Auto_final.apk` — smali, resources, manifest. Edit here, rebuild with apktool, sign, install as an update. |
-| `java/` | The decompiled **Java sources with restored Google class names** — 3,377 `.java` files, browsable. Start here for reading the code. (`docs/rename_map.csv` maps every renamed class.) |
-| `java-jadx/` | The **raw jadx Java output** — the same 3,377 files before renaming, kept for cross-checking. |
+| `java-jadx/` | The decompiled **Java sources** (raw jadx output) — 3,377 `.java` files, browsable, for reading the original receiver. A renamed-class version exists in the archives under `decompile/`; `docs/rename_map.csv` maps the class names. Note: this is a snapshot of the starting APK — `source/` is the current code. |
 | `decompile/` | The full decompilation archives of the original APK: jadx Java sources + Ghidra native C (`AutoLinker_decompiled_full.zip`), and the Java tree with restored Google class names (`AutoLinker_java_renamed.zip`). |
 | `docs/` | All project documentation: architecture map (Java→JNI→native, auth chain), JNI map, class rename map, hidden-features audit, unlock patch set, apply-order sheet, test sheets, instruction-screen inventory. |
 | `builds/` | Every compiled build, in order (see lineage below). All signed with the same key, so each installs as an in-place update over the previous ones. |
