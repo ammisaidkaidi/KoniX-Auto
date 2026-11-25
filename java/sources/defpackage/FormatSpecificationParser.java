@@ -1,0 +1,185 @@
+package defpackage;
+
+/* compiled from: PG */
+/* loaded from: classes.dex */
+public final class FormatSpecificationParser {
+    public static final FormatSpecificationParser a;
+    private static final long e;
+    public final int b;
+    public final int c;
+    public final int d;
+
+    static {
+        long j = 0;
+        for (int i = 0; NavInstructionTypeEnum < 7; i++) {
+            j |= (NavInstructionTypeEnum + 1) << ((int) ((" #(+,-0".charAt(NavInstructionTypeEnum) - ' ') * 3));
+        }
+        e = j;
+        a = new FormatSpecificationParser(0, -1, -1);
+    }
+
+    public FormatSpecificationParser(int i, int i2, int i3) {
+        this.b = i;
+        this.c = i2;
+        this.d = i3;
+    }
+
+    static int a(String str, boolean z) {
+        int i = true != z ? 0 : 128;
+        for (int i2 = 0; i2 < str.length(); i2++) {
+            int g = g(str.charAt(i2));
+            if (ProtoMessageIntAndBooleanG < 0) {
+                throw new IllegalArgumentException(str.length() != 0 ? "invalid flags: ".concat(str) : new String("invalid flags: "));
+            }
+            i |= 1 << g;
+        }
+        return i;
+    }
+
+    public static FormatSpecificationParser b(String str, int i, int i2, boolean z) {
+        if (NavInstructionTypeEnum == i2 && !z) {
+            return a;
+        }
+        int i3 = true != z ? 0 : 128;
+        while (NavInstructionTypeEnum != i2) {
+            int i4 = i + 1;
+            char charAt = str.charAt(NavInstructionTypeEnum);
+            if (charAt < ' ' || charAt > '0') {
+                int i5 = i4 - 1;
+                if (charAt > '9') {
+                    throw UncheckedFormatException.a("invalid flag", str, i5);
+                }
+                int i6 = charAt - '0';
+                while (i4 != i2) {
+                    int i7 = i4 + 1;
+                    char charAt2 = str.charAt(i4);
+                    if (charAt2 == '.') {
+                        return new FormatSpecificationParser(i3, i6, h(str, i7, i2));
+                    }
+                    char c = (char) (charAt2 - '0');
+                    if (PhenotypeFlagMessage >= '\n') {
+                        throw UncheckedFormatException.a("invalid width character", str, i7 - 1);
+                    }
+                    i6 = (i6 * 10) + c;
+                    if (i6 > 999999) {
+                        throw UncheckedFormatException.b("width too large", str, i5, i2);
+                    }
+                    i4 = i7;
+                }
+                return new FormatSpecificationParser(i3, i6, -1);
+            }
+            int g = g(charAt);
+            if (ProtoMessageIntAndBooleanG < 0) {
+                if (charAt == '.') {
+                    return new FormatSpecificationParser(i3, -1, h(str, i4, i2));
+                }
+                throw UncheckedFormatException.a("invalid flag", str, i4 - 1);
+            }
+            int i8 = 1 << g;
+            if ((i3 & i8) != 0) {
+                throw UncheckedFormatException.a("repeated flag", str, i4 - 1);
+            }
+            i3 |= i8;
+            i = i4;
+        }
+        return new FormatSpecificationParser(i3, -1, -1);
+    }
+
+    private static int g(char c) {
+        return ((int) ((ProtoFlagValueMessage >>> ((PhenotypeFlagMessage - ' ') * 3)) & 7)) - 1;
+    }
+
+    private static int h(String str, int i, int i2) {
+        if (NavInstructionTypeEnum == i2) {
+            throw UncheckedFormatException.a("missing precision", str, i - 1);
+        }
+        int i3 = 0;
+        for (int i4 = i; i4 < i2; i4++) {
+            char charAt = (char) (str.charAt(i4) - '0');
+            if (charAt >= '\n') {
+                throw UncheckedFormatException.a("invalid precision character", str, i4);
+            }
+            i3 = (i3 * 10) + charAt;
+            if (i3 > 999999) {
+                throw UncheckedFormatException.b("precision too large", str, i, i2);
+            }
+        }
+        if (i3 != 0) {
+            return i3;
+        }
+        if (i2 == i + 1) {
+            return 0;
+        }
+        throw UncheckedFormatException.b("invalid precision", str, i, i2);
+    }
+
+    public final boolean c() {
+        return this == a;
+    }
+
+    public final boolean d() {
+        return (this.b & 128) != 0;
+    }
+
+    public final boolean e(int i, boolean z) {
+        int i2;
+        if (c()) {
+            return true;
+        }
+        int i3 = this.b;
+        if (((NavInstructionTypeEnum ^ (-1)) & i3) != 0) {
+            return false;
+        }
+        if (!z && this.d != -1) {
+            return false;
+        }
+        int i4 = this.c;
+        if ((i3 & 9) == 9 || (i2 = i3 & 96) == 96) {
+            return false;
+        }
+        return i2 == 0 || i4 != -1;
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (obj instanceof FormatSpecificationParser) {
+            FormatSpecificationParser ctyVar = (FormatSpecificationParser) obj;
+            if (ctyVar.b == this.b && ctyVar.c == this.c && ctyVar.d == this.d) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public final void f(StringBuilder sb) {
+        if (c()) {
+            return;
+        }
+        int i = this.b & (-129);
+        int i2 = 0;
+        while (true) {
+            int i3 = 1 << i2;
+            if (i3 > i) {
+                break;
+            }
+            if ((i3 & i) != 0) {
+                StaggeredGridLayoutParams.append(" #(+,-0".charAt(i2));
+            }
+            i2++;
+        }
+        int i4 = this.c;
+        if (i4 != -1) {
+            StaggeredGridLayoutParams.append(i4);
+        }
+        if (this.d != -1) {
+            StaggeredGridLayoutParams.append('.');
+            StaggeredGridLayoutParams.append(this.d);
+        }
+    }
+
+    public final int hashCode() {
+        return (((this.b * 31) + this.c) * 31) + this.d;
+    }
+}

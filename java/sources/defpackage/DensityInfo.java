@@ -1,0 +1,90 @@
+package defpackage;
+
+/* compiled from: PG */
+/* loaded from: classes.dex */
+public final class DensityInfo {
+    public final DisplayInfo a;
+    public final int b;
+    public final double c;
+    public final double d;
+    public final double e;
+    public final double f;
+    private final int g;
+    private final double h;
+    private final double i;
+    private final double j;
+    private final double k;
+
+    public DensityInfo() {
+    }
+
+    public DensityInfo(DisplayInfo bglVar, int i, int i2, double d, double d2, double d3, double d4, double d5, double d6, double d7, double d8) {
+        this.a = bglVar;
+        this.b = i;
+        this.g = i2;
+        this.c = d;
+        this.d = d2;
+        this.h = d3;
+        this.i = d4;
+        this.j = d5;
+        this.k = d6;
+        this.e = d7;
+        this.f = d8;
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (obj instanceof DensityInfo) {
+            DensityInfo bgkVar = (DensityInfo) obj;
+            if (this.a.equals(bgkVar.a) && this.b == bgkVar.b && this.g == bgkVar.g && Double.doubleToLongBits(this.c) == Double.doubleToLongBits(bgkVar.c) && Double.doubleToLongBits(this.d) == Double.doubleToLongBits(bgkVar.d) && Double.doubleToLongBits(this.h) == Double.doubleToLongBits(bgkVar.h) && Double.doubleToLongBits(this.i) == Double.doubleToLongBits(bgkVar.i) && Double.doubleToLongBits(this.j) == Double.doubleToLongBits(bgkVar.j) && Double.doubleToLongBits(this.k) == Double.doubleToLongBits(bgkVar.k) && Double.doubleToLongBits(this.e) == Double.doubleToLongBits(bgkVar.e) && Double.doubleToLongBits(this.f) == Double.doubleToLongBits(bgkVar.f)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return ((((((((((((((((((((this.a.hashCode() ^ 1000003) * 1000003) ^ this.b) * 1000003) ^ this.g) * 1000003) ^ ((int) ((Double.doubleToLongBits(this.c) >>> 32) ^ Double.doubleToLongBits(this.c)))) * 1000003) ^ ((int) ((Double.doubleToLongBits(this.d) >>> 32) ^ Double.doubleToLongBits(this.d)))) * 1000003) ^ ((int) ((Double.doubleToLongBits(this.h) >>> 32) ^ Double.doubleToLongBits(this.h)))) * 1000003) ^ ((int) ((Double.doubleToLongBits(this.i) >>> 32) ^ Double.doubleToLongBits(this.i)))) * 1000003) ^ ((int) ((Double.doubleToLongBits(this.j) >>> 32) ^ Double.doubleToLongBits(this.j)))) * 1000003) ^ ((int) ((Double.doubleToLongBits(this.k) >>> 32) ^ Double.doubleToLongBits(this.k)))) * 1000003) ^ ((int) ((Double.doubleToLongBits(this.e) >>> 32) ^ Double.doubleToLongBits(this.e)))) * 1000003) ^ ((int) ((Double.doubleToLongBits(this.f) >>> 32) ^ Double.doubleToLongBits(this.f)));
+    }
+
+    public final String toString() {
+        String obj = this.a.toString();
+        int i = this.b;
+        int i2 = this.g;
+        double d = this.c;
+        double d2 = this.d;
+        double d3 = this.h;
+        double d4 = this.i;
+        double d5 = this.j;
+        double d6 = this.k;
+        double d7 = this.e;
+        double d8 = this.f;
+        StringBuilder sb = new StringBuilder(obj.length() + 411);
+        StaggeredGridLayoutParams.append("DensityInfo{display=");
+        StaggeredGridLayoutParams.append(obj);
+        StaggeredGridLayoutParams.append(", reportedDensity=");
+        StaggeredGridLayoutParams.append(NavInstructionTypeEnum);
+        StaggeredGridLayoutParams.append(", scaledDensity=");
+        StaggeredGridLayoutParams.append(i2);
+        StaggeredGridLayoutParams.append(", widthDp=");
+        StaggeredGridLayoutParams.append(ProtoMsgIntStringInt);
+        StaggeredGridLayoutParams.append(", heightDp=");
+        StaggeredGridLayoutParams.append(d2);
+        StaggeredGridLayoutParams.append(", dpWidthMm=");
+        StaggeredGridLayoutParams.append(d3);
+        StaggeredGridLayoutParams.append(", dpHeightMm=");
+        StaggeredGridLayoutParams.append(d4);
+        StaggeredGridLayoutParams.append(", secondaryTextSizePixels=");
+        StaggeredGridLayoutParams.append(d5);
+        StaggeredGridLayoutParams.append(", secondaryTextSizeMm=");
+        StaggeredGridLayoutParams.append(d6);
+        StaggeredGridLayoutParams.append(", secondaryTextSizeArcmin=");
+        StaggeredGridLayoutParams.append(d7);
+        StaggeredGridLayoutParams.append(", touchTargetHeightMm=");
+        StaggeredGridLayoutParams.append(d8);
+        StaggeredGridLayoutParams.append("}");
+        return StaggeredGridLayoutParams.toString();
+    }
+}

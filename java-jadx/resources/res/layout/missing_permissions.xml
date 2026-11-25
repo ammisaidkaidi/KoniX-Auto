@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/missing_permissions_layout"
+    android:background="?android:attr/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/ic_warning"
+        android:tint="?android:attr/colorError"
+        style="@style/Widget.FullscreenMessage.Image"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.FullscreenMessage"
+        android:id="@+id/ssl_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/missing_permissions"
+        style="@style/Widget.FullscreenMessage.TextView"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            style="@style/Widget.FullscreenMessage.Button.Enabled"/>
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exit"
+            style="@style/Widget.FullscreenMessage.Button"/>
+    </LinearLayout>
+</LinearLayout>

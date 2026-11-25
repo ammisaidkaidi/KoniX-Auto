@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aa_disconnected">Nije povezano sa uslugom Android Auto.</string>
+    <string name="aa_pending">Pokrenite Android Auto za pristup medijima.</string>
+    <string name="abc_action_bar_up_description">Idite nagore</string>
+    <string name="abc_action_mode_done">Gotovo</string>
+    <string name="abc_capital_off">ISKLJUČENO</string>
+    <string name="abc_capital_on">UKLJUČENO</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">taster za razmak</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">Pretražite…</string>
+    <string name="abc_searchview_description_clear">Obrišite upit</string>
+    <string name="abc_searchview_description_search">Pretražite</string>
+    <string name="abc_searchview_description_submit">Pošaljite upit</string>
+    <string name="abc_searchview_description_voice">Glasovna pretraga</string>
+    <string name="abc_toolbar_collapse_description">Skupi</string>
+    <string name="app_name">AutoLinker</string>
+    <string name="car_ui_alert_dialog_default_button">Zatvori</string>
+    <string name="car_ui_preference_switch_off">Isključeno</string>
+    <string name="car_ui_preference_switch_on">Uključeno</string>
+    <string name="car_ui_restricted_while_driving">Funkcija nije dostupna tokom vožnje</string>
+    <string name="car_ui_scrollbar_page_down_button">Pomerite nadole</string>
+    <string name="car_ui_scrollbar_page_up_button">Pomerite nagore</string>
+    <string name="car_ui_scrolling_limited_message">Pomeranje je ograničeno tokom vožnje</string>
+    <string name="car_ui_toolbar_default_search_hint">Pretražite…</string>
+    <string name="car_ui_toolbar_menu_item_overflow_title">Preklopni meni</string>
+    <string name="car_ui_toolbar_menu_item_search_title">Pretraži</string>
+    <string name="car_ui_toolbar_menu_item_settings_title">Podešavanja</string>
+    <string name="car_ui_toolbar_nav_icon_content_description">Nazad</string>
+    <string name="common_google_play_services_enable_button">Omogući</string>
+    <string name="common_google_play_services_enable_text">%1$s neće funkcionisati ako ne omogućite Google Play usluge.</string>
+    <string name="common_google_play_services_enable_title">Omogućite Google Play usluge</string>
+    <string name="common_google_play_services_install_button">Instaliraj</string>
+    <string name="common_google_play_services_install_text">%1$s ne može da se pokrene bez Google Play usluga, koje nisu instalirane na uređaju.</string>
+    <string name="common_google_play_services_install_title">Preuzmite Google Play usluge</string>
+    <string name="common_google_play_services_notification_channel_name">Dostupnost Google Play usluga</string>
+    <string name="common_google_play_services_notification_ticker">Greška Google Play usluga</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ima problema sa Google Play uslugama. Probajte ponovo.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s ne može da se pokrene bez Google Play usluga, koje uređaj ne podržava.</string>
+    <string name="common_google_play_services_update_button">Ažuriraj</string>
+    <string name="common_google_play_services_update_text">%1$s ne može da se pokrene ako ne ažurirate Google Play usluge.</string>
+    <string name="common_google_play_services_update_title">Ažurirajte Google Play usluge</string>
+    <string name="common_google_play_services_updating_text">%1$s ne može da se pokrene bez Google Play usluga, koje se trenutno ažuriraju.</string>
+    <string name="connect_to_wireless_device">Povežite se sa uređajem %s</string>
+    <string name="connecting_to_phone">Android Auto se povezuje sa telefonom…</string>
+    <string name="copy">Kopiraj</string>
+    <string name="device_notification_channel_name">Dostupni uređaji</string>
+    <string name="exit">Zatvori</string>
+    <string name="expand_button_title">Napredno</string>
+    <string name="instruct_user_to_check_phone">Da biste koristili Android Auto, parkirajte automobil i pratite uputstva na telefonu</string>
+    <string name="instruct_user_to_replug_usb_device">Da biste pokrenuli Android Auto, izvucite USB kabl telefona i ponovo ga povežite.</string>
+    <string name="low_battery_minutes_toast">{num_minutes_remaining,plural, =0{Preostalo je manje od minuta.}=1{Još # minut.}one{Još # minut.}few{Još # minuta.}other{Još # minuta.}}</string>
+    <string name="low_battery_percentage_toast">{device} ima slabu bateriju: {battery_level}%. {low_battery_minutes_message}</string>
+    <string name="missing_permissions">Da biste koristili Android Auto, morate da date potrebne dozvole u Podešavanjima</string>
+    <string name="no_connected_devices_both">Povežite kompatibilan Android uređaj USB-om ili uparite preko Bluetooth-a da pokrenete Android Auto.</string>
+    <string name="no_connected_devices_wired_only">Povežite kompatibilan Android uređaj pomoću USB-a da biste pokrenuli Android Auto.</string>
+    <string name="not_set">Nije podešeno</string>
+    <string name="poor_wifi_toast">Bežična veza sa telefonom nije stabilna. Približite telefon pristupnoj tački ili povežite pomoću USB-a.</string>
+    <string name="pref_open_source_licenses">Licence otvorenog koda</string>
+    <string name="pref_version">Verzija</string>
+    <string name="preference_copied">Rezime „%1$s“ je kopiran u privremenu memoriju.</string>
+    <string name="settings">Podešavanja</string>
+    <string name="ssl_error_help">Povezivanje sa uslugom Android Auto nije uspelo. Probajte da ažurirate datum, vreme ili softver sistema.</string>
+    <string name="start_ap_failed">Pokretanje bežične projekcije nije uspelo. Probajte ponovo.</string>
+    <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="time_arrived">Stigli ste.</string>
+    <string name="time_format_days">{number_days,plural, =1{# d}one{# d}few{# d}other{# d}}</string>
+    <string name="time_format_days_and_hours">%1$s %2$s</string>
+    <string name="time_format_hours">{number_hours,plural, =1{# s}one{# s}few{# s}other{# s}}</string>
+    <string name="time_format_hours_and_minutes">%1$s %2$s</string>
+    <string name="time_format_minutes">{number_minutes,plural, =1{# min}one{# min}few{# min}other{# min}}</string>
+    <string name="unable_to_start_wireless">Pokretanje bežične sesije aplikacije Android Auto nije uspelo.</string>
+    <string name="usb_ping_timeout_occurred">Došlo je do greške pri povezivanju sa aplikacijom Android Auto. Proverite USB kabl.</string>
+    <string name="v7_preference_off">ISKLJUČENO</string>
+    <string name="v7_preference_on">UKLJUČENO</string>
+    <string name="wireless_available">Bežično</string>
+    <string name="wireless_error_occurred">Došlo je do greške pri bežičnom povezivanju sa aplikacijom Android Auto.</string>
+    <string name="wireless_failed_location_services_disabled">Pokretanje bežične veze nije uspelo zato što su onemogućene usluge lokacije.</string>
+</resources>

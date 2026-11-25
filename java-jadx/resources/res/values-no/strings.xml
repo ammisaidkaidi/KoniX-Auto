@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aa_disconnected">Android Auto er koblet fra.</string>
+    <string name="aa_pending">Start Android Auto for å åpne medier.</string>
+    <string name="app_name">AutoLinker</string>
+    <string name="connect_to_wireless_device">Koble til %s</string>
+    <string name="connecting_to_phone">Kobler sammen Android Auto og telefonen …</string>
+    <string name="device_notification_channel_name">Tilgjengelige enheter</string>
+    <string name="exit">Lukk</string>
+    <string name="instruct_user_to_check_phone">For å bruke Android Auto må du parkere og følge instruksjonene på telefonen.</string>
+    <string name="instruct_user_to_replug_usb_device">For å starte Android Auto, koble fra og koble til igjen USB-kabelen til telefonen.</string>
+    <string name="low_battery_minutes_toast">{num_minutes_remaining,plural, =0{Mindre enn ett minutt igjen.}=1{# minutt igjen.}other{# minutter igjen.}}</string>
+    <string name="low_battery_percentage_toast">{device} har lavt batteri: {battery_level} %. {low_battery_minutes_message}</string>
+    <string name="missing_permissions">For å bruke Android Auto må du gi de nødvendige tillatelsene i Innstillinger</string>
+    <string name="no_connected_devices_both">Koble til en kompatibel Android-enhet via USB eller Bluetooth for å kjøre Android Auto.</string>
+    <string name="no_connected_devices_wired_only">Koble til en kompatibel Android-enhet via USB for å kjøre Android Auto.</string>
+    <string name="poor_wifi_toast">Den trådløse tilkoblingen til telefonen er ustabil. Flytt telefonen nærmere tilgangspunktet, eller koble til via USB.</string>
+    <string name="pref_open_source_licenses">Lisenser for åpen kildekode</string>
+    <string name="pref_version">Versjon</string>
+    <string name="settings">Innstillinger</string>
+    <string name="ssl_error_help">Kan ikke koble til Android Auto. Prøv å oppdatere klokkeslettet, datoen eller systemprogramvaren.</string>
+    <string name="start_ap_failed">Kunne ikke starte trådløs projeksjon. Prøv igjen.</string>
+    <string name="time_arrived">Du er fremme.</string>
+    <string name="time_format_days">{number_days,plural, =1{# d}other{# d}}</string>
+    <string name="time_format_days_and_hours">%1$s %2$s</string>
+    <string name="time_format_hours">{number_hours,plural, =1{# t}other{# t}}</string>
+    <string name="time_format_hours_and_minutes">%1$s %2$s</string>
+    <string name="time_format_minutes">{number_minutes,plural, =1{# min}other{# min}}</string>
+    <string name="unable_to_start_wireless">Kan ikke starte trådløs Android Auto-økt.</string>
+    <string name="usb_ping_timeout_occurred">Det oppsto en tilkoblingsfeil med Android Auto. Sjekk USB-kabelen.</string>
+    <string name="wireless_available">Trådløs</string>
+    <string name="wireless_error_occurred">Det oppsto en feil med den trådløse tilkoblingen til Android Auto.</string>
+    <string name="wireless_failed_location_services_disabled">Kan ikke starte trådløs tilkobling fordi posisjonstjenester er av.</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame"
+    android:background="?android:attr/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_gravity="center"
+        android:id="@+id/clipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <SurfaceView
+            android:layout_gravity="clip_vertical|top|clip_horizontal|left"
+            android:id="@+id/surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <include
+        android:id="@+id/frx_layout"
+        android:visibility="gone"
+        layout="@layout/frx_layout"/>
+</FrameLayout>

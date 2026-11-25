@@ -1,0 +1,10 @@
+package defpackage;
+
+/* compiled from: PG */
+/* loaded from: classes.dex */
+abstract class FragmentFactoryBase {
+    private FragmentFactoryBase() {
+    }
+
+    public abstract void a();
+}

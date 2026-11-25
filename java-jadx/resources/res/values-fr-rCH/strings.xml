@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aa_disconnected">Android Auto est déconnecté.</string>
+    <string name="aa_pending">Lancez Android Auto pour accéder aux contenus multimédias.</string>
+    <string name="app_name">AutoLinker</string>
+    <string name="connect_to_wireless_device">Se connecter à %s</string>
+    <string name="connecting_to_phone">Association d\'Android Auto au téléphone…</string>
+    <string name="device_notification_channel_name">Appareils disponibles</string>
+    <string name="exit">Quitter</string>
+    <string name="instruct_user_to_check_phone">Pour utiliser Android Auto, garez-vous et suivez les instructions sur votre téléphone</string>
+    <string name="instruct_user_to_replug_usb_device">Pour lancer Android Auto, débranchez, puis rebranchez le câble USB de votre téléphone.</string>
+    <string name="low_battery_minutes_toast">{num_minutes_remaining,plural, =0{Moins d\'une minute restante.}=1{# minute restante.}one{# minute restante.}other{# minutes restantes.}}</string>
+    <string name="low_battery_percentage_toast">La batterie de {device} est faible : {battery_level} %. {low_battery_minutes_message}</string>
+    <string name="missing_permissions">Pour utiliser Android Auto, vous devez accorder les autorisations requises dans les paramètres</string>
+    <string name="no_connected_devices_both">Connectez un appareil Android compatible en USB ou en Bluetooth pour lancer Android Auto.</string>
+    <string name="no_connected_devices_wired_only">Veuillez connecter un appareil Android compatible en USB pour lancer Android Auto.</string>
+    <string name="poor_wifi_toast">La connexion sans fil avec votre téléphone est instable. Rapprochez votre téléphone du point d\'accès ou connectez-le en USB.</string>
+    <string name="pref_open_source_licenses">Licences Open Source</string>
+    <string name="pref_version">Version</string>
+    <string name="settings">Paramètres</string>
+    <string name="ssl_error_help">Impossible de se connecter à Android Auto. Essayez de mettre à jour la date, l\'heure ou le logiciel système.</string>
+    <string name="start_ap_failed">Échec du démarrage de la projection sans fil. Veuillez réessayer.</string>
+    <string name="time_arrived">Vous êtes arrivé.</string>
+    <string name="time_format_days">{number_days,plural, =1{# j}one{# j}other{# j}}</string>
+    <string name="time_format_days_and_hours">%1$s %2$s</string>
+    <string name="time_format_hours">{number_hours,plural, =1{# h}one{# h}other{# h}}</string>
+    <string name="time_format_hours_and_minutes">%1$s %2$s</string>
+    <string name="time_format_minutes">{number_minutes,plural, =1{# min}one{# min}other{# min}}</string>
+    <string name="unable_to_start_wireless">Impossible de lancer la session Android Auto sans fil.</string>
+    <string name="usb_ping_timeout_occurred">Android Auto a rencontré une erreur de connexion. Veuillez vérifier le câble USB.</string>
+    <string name="wireless_available">Sans fil</string>
+    <string name="wireless_error_occurred">Android Auto a rencontré une erreur de connexion sans fil.</string>
+    <string name="wireless_failed_location_services_disabled">Impossible d\'établir la connexion sans fil, car les services de localisation sont désactivés.</string>
+</resources>

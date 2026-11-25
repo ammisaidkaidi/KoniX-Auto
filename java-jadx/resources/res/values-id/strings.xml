@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aa_disconnected">Koneksi Android Auto terputus.</string>
+    <string name="aa_pending">Luncurkan Android Auto untuk mengakses media.</string>
+    <string name="app_name">AutoLinker</string>
+    <string name="connect_to_wireless_device">Hubungkan ke %s</string>
+    <string name="connecting_to_phone">Menghubungkan Android Auto dengan ponsel…</string>
+    <string name="device_notification_channel_name">Perangkat yang tersedia</string>
+    <string name="exit">Keluar</string>
+    <string name="instruct_user_to_check_phone">Untuk menggunakan Android Auto, parkir kendaraan Anda lalu ikuti petunjuk di ponsel</string>
+    <string name="instruct_user_to_replug_usb_device">Untuk memulai Android Auto, cabut dan colokkan kembali kabel USB ponsel Anda.</string>
+    <string name="low_battery_minutes_toast">{num_minutes_remaining,plural, =0{Kurang dari satu menit tersisa.}=1{# menit tersisa.}other{# menit tersisa.}}</string>
+    <string name="low_battery_percentage_toast">Baterai {device} hampir habis: {battery_level}%. {low_battery_minutes_message}</string>
+    <string name="missing_permissions">Untuk menggunakan Android Auto, Anda harus memberikan izin yang diperlukan di Setelan</string>
+    <string name="no_connected_devices_both">Hubungkan perangkat Android yang kompatibel melalui USB/bluetooth untuk menjalankan Android Auto.</string>
+    <string name="no_connected_devices_wired_only">Harap hubungkan perangkat Android yang kompatibel melalui USB untuk menjalankan Android Auto.</string>
+    <string name="poor_wifi_toast">Koneksi nirkabel dengan ponsel Anda tidak stabil. Harap dekatkan ponsel Anda ke titik akses (AP) atau hubungkan melalui USB.</string>
+    <string name="pref_open_source_licenses">Lisensi Open Source</string>
+    <string name="pref_version">Versi</string>
+    <string name="preferences_license_title">Lisensi open source</string>
+    <string name="settings">Setelan</string>
+    <string name="ssl_error_help">Tidak dapat terhubung ke Android Auto. Coba perbarui tanggal, waktu, atau software sistem.</string>
+    <string name="start_ap_failed">Gagal memulai proyeksi nirkabel. Harap coba lagi.</string>
+    <string name="time_arrived">Anda sudah sampai.</string>
+    <string name="time_format_days">{number_days,plural, =1{# h}other{# h}}</string>
+    <string name="time_format_days_and_hours">%1$s %2$s</string>
+    <string name="time_format_hours">{number_hours,plural, =1{# j}other{# j}}</string>
+    <string name="time_format_hours_and_minutes">%1$s %2$s</string>
+    <string name="time_format_minutes">{number_minutes,plural, =1{# mnt}other{# mnt}}</string>
+    <string name="unable_to_start_wireless">Tidak dapat memulai sesi nirkabel Android Auto.</string>
+    <string name="usb_ping_timeout_occurred">Terjadi error koneksi pada Android Auto. Harap periksa kabel USB.</string>
+    <string name="wireless_available">Nirkabel</string>
+    <string name="wireless_error_occurred">Terjadi error koneksi nirkabel pada Android Auto.</string>
+    <string name="wireless_failed_location_services_disabled">Tidak dapat memulai koneksi nirkabel karena Layanan Lokasi dinonaktifkan.</string>
+</resources>

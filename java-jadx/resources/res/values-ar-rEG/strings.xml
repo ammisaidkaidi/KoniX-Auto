@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aa_disconnected">تطبيق Android Auto غير متصل.</string>
+    <string name="aa_pending">شغِّل Android Auto للوصول إلى الوسائط.</string>
+    <string name="app_name">AutoLinker</string>
+    <string name="connect_to_wireless_device">ربط بجهاز %s</string>
+    <string name="connecting_to_phone">جارٍ ربط Android Auto بالهاتف…</string>
+    <string name="device_notification_channel_name">الأجهزة المتاحة</string>
+    <string name="exit">الخروج</string>
+    <string name="instruct_user_to_check_phone">لاستخدام Android Auto، يُرجى إيقاف السيارة واتّباع التعليمات الواردة على هاتفك.</string>
+    <string name="instruct_user_to_replug_usb_device">لبدء تشغيل Android Auto، يجب فصل كابل USB الخاص بالهاتف وإعادة توصيله.</string>
+    <string name="low_battery_minutes_toast">{num_minutes_remaining,plural, =0{يتبقّى أقل من دقيقة.}=1{تتبقّى دقيقة واحدة.}two{تتبقّى دقيقتان.}few{تتبقّى # دقائق.}many{تتبقّى # دقيقة.}other{تتبقّى # دقيقة.}}</string>
+    <string name="low_battery_percentage_toast">طاقة البطارية بالهاتف {device} منخفضة: {battery_level}%. {low_battery_minutes_message}</string>
+    <string name="missing_permissions">لاستخدام Android Auto، يجب منح الأذونات المطلوبة من خلال الإعدادات.</string>
+    <string name="no_connected_devices_both">يُرجى ربط جهاز Android باستخدام USB أو إقرانه من خلال البلوتوث لتشغيل تطبيق Android Auto.</string>
+    <string name="no_connected_devices_wired_only">يُرجى ربط جهاز Android متوافق باستخدام USB لتشغيل تطبيق Android Auto.</string>
+    <string name="poor_wifi_toast">الاتصال اللاسلكي بهاتفك غير مستقر. يُرجى تقريب الهاتف من نقطة الوصول أو ربطه باستخدام USB.</string>
+    <string name="pref_open_source_licenses">تراخيص البرامج المفتوحة المصدر</string>
+    <string name="pref_version">الإصدار</string>
+    <string name="settings">إعدادات</string>
+    <string name="ssl_error_help">يتعذّر الاتصال بـ Android Auto. حاوِل تحديث التاريخ أو الوقت أو برنامج النظام.</string>
+    <string name="start_ap_failed">تعذّر بدء العرض اللاسلكي. يُرجى إعادة المحاولة.</string>
+    <string name="time_arrived">لقد وصلت إلى وجهتك.</string>
+    <string name="time_format_days">{number_days,plural, =1{يوم واحد}zero{# يوم}two{يومَان}few{# أيام}many{# يومًا}other{# يوم}}</string>
+    <string name="time_format_days_and_hours">%1$s %2$s</string>
+    <string name="time_format_hours">{number_hours,plural, =1{ساعة واحدة}zero{# ساعة}two{ساعتَان}few{# ساعات}many{# ساعة}other{# ساعة}}</string>
+    <string name="time_format_hours_and_minutes">%1$s %2$s</string>
+    <string name="time_format_minutes">{number_minutes,plural, =1{دقيقة واحدة}zero{# دقيقة}two{دقيقتَان}few{# دقائق}many{# دقيقة}other{# دقيقة}}</string>
+    <string name="unable_to_start_wireless">تعذَّر بدء جلسة الاتصال اللاسلكي من Android Auto.</string>
+    <string name="usb_ping_timeout_occurred">حدث خطأ في الاتصال في تطبيق Android Auto. يُرجى التحقق من كابل USB.</string>
+    <string name="wireless_available">لاسلكي</string>
+    <string name="wireless_error_occurred">حدث خطأ في الاتصال اللاسلكي في تطبيق Android Auto.</string>
+    <string name="wireless_failed_location_services_disabled">تعذَّر بدء الاتصال اللاسلكي لأنّ إعدادات \"خدمات الموقع الجغرافي\" متوقفة.</string>
+</resources>

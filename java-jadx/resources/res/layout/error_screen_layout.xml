@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/error_screen_layout"
+    android:background="?android:attr/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/ic_phone_instructions"
+        style="@style/Widget.FullscreenMessage.Image"/>
+    <TextView
+        android:textAppearance="@style/TextAppearance.FullscreenMessage"
+        android:id="@+id/tv_error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instruct_user_to_check_phone"
+        style="@style/Widget.FullscreenMessage.TextView"/>
+    <Button
+        android:id="@+id/error_btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@android:string/cancel"
+        style="@style/Widget.FullscreenMessage.Button"/>
+</LinearLayout>

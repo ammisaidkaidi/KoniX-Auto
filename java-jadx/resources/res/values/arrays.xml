@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="car_ui_ime_wide_screen_allowed_package_list">
+    </array>
+    <array name="launch_mode_override_entries">
+        <item>@string/launch_mode_override_auto</item>
+        <item>@string/launch_mode_override_off</item>
+    </array>
+    <array name="projection_ui_mode_entries">
+        <item>@string/projection_ui_mode_full_screen</item>
+        <item>@string/projection_ui_mode_blended</item>
+        <item>@string/projection_ui_mode_status_bar</item>
+    </array>
+    <array name="projection_ui_mode_variation_entries">
+        <item>@string/projection_ui_mode_no_clock</item>
+        <item>@string/projection_ui_mode_no_battery</item>
+        <item>@string/projection_ui_mode_no_phone</item>
+    </array>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="dev_settings_steps_away">
+        <item quantity="one">You are %d step away from becoming a developer.</item>
+        <item quantity="other">You are %d steps away from becoming a developer.</item>
+    </plurals>
+</resources>

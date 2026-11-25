@@ -1,0 +1,49 @@
+package defpackage;
+
+/* compiled from: PG */
+/* loaded from: classes.dex */
+public final class dgv extends ddk implements des {
+    public static final dgv b;
+    private static volatile dex c;
+    public ddr a = dfa.b;
+
+    static {
+        dgv dgvVar = new dgv();
+        b = dgvVar;
+        ddk.D(dgv.class, dgvVar);
+    }
+
+    private dgv() {
+    }
+
+    @Override // defpackage.ddk
+    protected final Object a(int i, Object obj) {
+        switch (i - 1) {
+            case 0:
+                return (byte) 1;
+            case 1:
+            default:
+                return null;
+            case 2:
+                return C(b, "\u0001\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0001\u0000\u0001\u001b", new Object[]{"a", dgu.class});
+            case 3:
+                return new dgv();
+            case 4:
+                return new ddf(b);
+            case 5:
+                return b;
+            case 6:
+                dex dexVar = c;
+                if (dexVar == null) {
+                    synchronized (dgv.class) {
+                        dexVar = c;
+                        if (dexVar == null) {
+                            dexVar = new ddg(b);
+                            c = dexVar;
+                        }
+                    }
+                }
+                return dexVar;
+        }
+    }
+}

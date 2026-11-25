@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId=""
+    android:versionCode="300063473"
+    android:versionName="1.0.413336740-release"
+    android:compileSdkVersion="31"
+    android:compileSdkVersionCodename="Tiramisu"
+    package="com.google.android.embedded.projection"
+    platformBuildVersionCode="31"
+    platformBuildVersionName="Tiramisu">
+    <uses-sdk
+        android:minSdkVersion="28"
+        android:targetSdkVersion="31"/>
+    <uses-feature
+        android:name="android.hardware.type.automotive"
+        android:required="true"/>
+    <uses-feature
+        android:name="com.google.android.car.feature.AARECEIVER"
+        android:required="true"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30"/>
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS"/>
+    <uses-permission android:name="android.permission.MANAGE_USB"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.CONTROL_INCALL_EXPERIENCE"/>
+    <uses-permission android:name="android.car.permission.CAR_PROJECTION"/>
+    <uses-permission android:name="android.car.permission.CAR_INFO"/>
+    <uses-permission android:name="android.car.permission.CAR_SPEED"/>
+    <uses-permission android:name="android.car.permission.CAR_ENERGY"/>
+    <uses-permission android:name="android.car.permission.CAR_ENGINE_DETAILED"/>
+    <uses-permission android:name="android.car.permission.CAR_MILEAGE"/>
+    <uses-permission android:name="android.car.permission.CAR_EXTERIOR_ENVIRONMENT"/>
+    <uses-permission android:name="android.car.permission.CAR_POWERTRAIN"/>
+    <uses-permission android:name="android.car.permission.CAR_HANDLE_USB_AOAP_DEVICE"/>
+    <uses-permission android:name="android.car.permission.CAR_DISPLAY_IN_CLUSTER"/>
+    <uses-permission android:name="android.car.permission.CAR_NAVIGATION_MANAGER"/>
+    <uses-permission android:name="android.car.permission.RECEIVE_CAR_AUDIO_DUCKING_EVENTS"/>
+    <uses-permission android:name="com.google.android.gms.permission.CAR_VENDOR_EXTENSION"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission
+        android:name="com.android.car.permission.RECEIVE_CAR_AUDIO_DUCKING_EVENTS"
+        android:maxSdkVersion="28"/>
+    <uses-permission
+        android:name="com.android.car.permission.CAR_HANDLE_USB_AOAP_DEVICE"
+        android:maxSdkVersion="28"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="geo"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.car.ui.intent.action.PLUGIN"/>
+        </intent>
+    </queries>
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_android_auto"
+        android:name="com.google.android.apps.auto.aareceiver.AndroidAutoReceiverApp">
+        <activity
+            android:label="@string/app_name"
+            android:name="com.google.android.apps.auto.aareceiver.ui.AndroidAutoHeadunitActivity"
+            android:exported="false"
+            android:taskAffinity=""
+            android:launchMode="singleInstance"
+            android:configChanges="uiMode|keyboardHidden|keyboard"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.google.android.embedded.projection.PROJECT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.NoDisplay"
+            android:label="@string/app_name"
+            android:name="com.google.android.apps.auto.aareceiver.ui.ClusterActivityWrapper"
+            android:exported="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.car.cluster.NAVIGATION"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.google.android.apps.auto.aareceiver.ui.ClusterActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
+        <activity
+            android:theme="@style/DialogTheme"
+            android:label="@string/app_name"
+            android:name="com.google.android.apps.auto.aareceiver.ui.ProjectionDeviceDisambiguationActivity"
+            android:exported="false"
+            android:launchMode="singleInstance">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
+        <activity-alias
+            android:icon="@drawable/ic_android_auto_unavailable"
+            android:name="com.google.android.apps.auto.aareceiver.ui.ProjectionDeviceDisambiguationActivity.UnavailableIcon"
+            android:enabled="true"
+            android:exported="true"
+            android:targetActivity="com.google.android.apps.auto.aareceiver.ui.ProjectionDeviceDisambiguationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SHOW_APP_INFO"/>
+                <category android:name="android.intent.category.INFO"/>
+            </intent-filter>
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity-alias>
+        <activity-alias
+            android:icon="@drawable/ic_android_auto"
+            android:name="com.google.android.apps.auto.aareceiver.ui.ProjectionDeviceDisambiguationActivity.AvailableIcon"
+            android:enabled="false"
+            android:exported="true"
+            android:targetActivity="com.google.android.apps.auto.aareceiver.ui.ProjectionDeviceDisambiguationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SHOW_APP_INFO"/>
+                <category android:name="android.intent.category.INFO"/>
+            </intent-filter>
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity-alias>
+        <activity
+            android:theme="@android:style/Theme.NoDisplay"
+            android:name="com.google.android.apps.auto.aareceiver.transport.usb.NewDeviceActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/usb_device_filter"/>
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
+        <activity
+            android:theme="@style/Theme.CarUi.WithToolbar"
+            android:label="@string/settings"
+            android:name="com.google.android.apps.auto.aareceiver.settings.SettingsActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.title"
+                android:value="@string/app_name"/>
+            <meta-data
+                android:name="com.android.settings.icon"
+                android:resource="@drawable/ic_android_auto"/>
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.system"/>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.google.android.apps.auto.aareceiver.ui.WaitingForConnectionActivity"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.google.android.apps.auto.aareceiver.ui.ErrorMessageActivity"
+            android:exported="false">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.google.android.apps.auto.aareceiver.ui.SslCertificateIssueActivity"
+            android:exported="false">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.google.android.apps.auto.aareceiver.ui.MissingPermissionsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="distractionOptimized"
+                android:value="true"/>
+        </activity>
+        <service
+            android:name="com.google.android.apps.auto.aareceiver.transport.usb.AoapSupportCheckService"
+            android:permission="android.permission.MANAGE_USB"
+            android:exported="true"/>
+        <service
+            android:name="com.google.android.apps.auto.aareceiver.service.PersistentService"
+            android:permission="android.car.permission.BIND_PROJECTION_SERVICE"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.apps.auto.aareceiver.media.MediaBrowserService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.android.apps.auto.aareceiver.telecom.InCallServiceImpl"
+            android:permission="android.permission.BIND_INCALL_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.telecom.InCallService"/>
+            </intent-filter>
+        </service>
+        <receiver
+            android:name="com.google.android.apps.auto.aareceiver.service.EntrypointBroadcastReceiver"
+            android:exported="false"
+            android:directBootAware="true">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.apps.auto.aareceiver.service.ProjectionCommandReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.android.car.projection.action.START"/>
+                <action android:name="com.android.car.projection.action.START_USB"/>
+                <action android:name="com.android.car.projection.action.START_WIRELESS"/>
+                <action android:name="com.android.car.projection.action.STOP"/>
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="com.google.android.apps.auto.aareceiver.cluster.ClusterImageProvider"
+            android:writePermission="com.google.android.embedded.projection.NAV_IMAGE_WRITE_PERMISSION"
+            android:exported="true"
+            android:authorities="com.google.android.apps.auto.aareceiver.cluster.clusterimageprovider"/>
+        <meta-data
+            android:name="com.google.android.gms.phenotype.registration.xml:com.google.android.apps.auto.aareceiver"
+            android:resource="@xml/com_google_android_apps_auto_aareceiver_phenotype_release"/>
+        <service
+            android:name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"
+            android:enabled="false"
+            android:exported="false"
+            android:process="">
+            <intent-filter>
+                <action android:name="com.google.android.libraries.phenotype.registration.PhenotypeMetadataHolderService"/>
+            </intent-filter>
+            <meta-data
+                android:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.apps.auto.aareceiver"
+                android:resource="@raw/com_google_android_apps_auto_aareceiver_registration_info_release"/>
+            <meta-data
+                android:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.consentverifier"
+                android:resource="@raw/com_google_android_libraries_consentverifier_registration_info"/>
+            <meta-data
+                android:name="com.google.android.gms.phenotype.registration.binarypb:com.google.android.libraries.performance.primes"
+                android:resource="@raw/com_google_android_libraries_performance_primes_registration_info"/>
+        </service>
+        <meta-data
+            android:name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.consentverifier"
+            android:resource="@xml/com_google_android_libraries_consentverifier_phenotype"/>
+        <meta-data
+            android:name="com.google.android.gms.phenotype.registration.xml:com.google.android.libraries.performance.primes"
+            android:resource="@xml/com_google_android_libraries_performance_primes_phenotype"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <receiver
+            android:name="com.google.android.libraries.performance.primes.transmitter.LifeboatReceiver"
+            android:exported="false"
+            android:process=":primes_lifeboat"/>
+        <receiver
+            android:name="com.google.android.libraries.phenotype.client.stable.AccountRemovedBroadcastReceiver"
+            android:exported="true"
+            android:process="">
+            <intent-filter>
+                <action android:name="android.accounts.action.ACCOUNT_REMOVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver"
+            android:permission="com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST"
+            android:exported="true"
+            android:process="">
+            <intent-filter>
+                <action android:name="com.google.android.gms.phenotype.UPDATE"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:theme="@style/Theme.AppCompat.DayNight"
+            android:label="@string/preferences_license_title"
+            android:name="com.google.android.libraries.social.licenses.LicenseMenuActivity"
+            android:exported="true"/>
+        <activity
+            android:theme="@style/Theme.AppCompat.DayNight"
+            android:label="@string/preferences_license_title"
+            android:name="com.google.android.libraries.social.licenses.LicenseActivity"
+            android:exported="false"/>
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false"
+            android:directBootAware="false"/>
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="@bool/enable_system_job_service_default"
+            android:exported="true"
+            android:directBootAware="false"/>
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:enabled="@bool/enable_system_foreground_service_default"
+            android:exported="false"
+            android:directBootAware="false"/>
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:enabled="true"
+            android:exported="false"
+            android:directBootAware="false"/>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:permission="android.permission.DUMP"
+            android:enabled="true"
+            android:exported="true"
+            android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="com.android.car.ui.core.CarUiInstaller"
+            android:exported="false"
+            android:process="@string/car_ui_installer_process_name"
+            android:authorities="com.google.android.embedded.projection.CarUiInstaller"
+            android:directBootAware="true"/>
+        <provider
+            android:name="com.android.car.ui.core.SearchResultsProvider"
+            android:readPermission="com.android.car.ui.READ_SEARCH_RESULTS"
+            android:exported="true"
+            android:process="@string/car_ui_installer_process_name"
+            android:authorities="com.google.android.embedded.projection.SearchResultsProvider"/>
+        <service
+            android:name="com.google.android.build.data.PropertiesServiceHolder"
+            android:enabled="false"
+            android:exported="false"
+            android:process="">
+            <intent-filter>
+                <action android:name="com.google.android.build.data.Properties"/>
+            </intent-filter>
+            <meta-data
+                android:name="com.google.android.build.data.properties"
+                android:resource="@raw/build_data"/>
+        </service>
+    </application>
+</manifest>
