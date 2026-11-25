@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aa_disconnected">Android Auto ist nicht verbunden.</string>
+    <string name="aa_pending">Starte Android Auto, um auf Medien zuzugreifen.</string>
+    <string name="app_name">KoniX-Auto</string>
+    <string name="connect_to_wireless_device">Mit %s verbinden</string>
+    <string name="connecting_to_phone">Android Auto wird mit dem Smartphone verbunden…</string>
+    <string name="device_notification_channel_name">Verfügbare Geräte</string>
+    <string name="exit">Beenden</string>
+    <string name="instruct_user_to_check_phone">Wenn du Android Auto nutzen möchtest, stell dein Auto ab und folge der Anleitung auf dem Smartphone</string>
+    <string name="instruct_user_to_replug_usb_device">Du kannst Android Auto starten, indem du das USB-Kabel deines Smartphones neu verbindest.</string>
+    <string name="low_battery_minutes_toast">{num_minutes_remaining,plural, =0{Noch weniger als eine Minute.}=1{Noch # Minute.}other{Noch # Minuten.}}</string>
+    <string name="low_battery_percentage_toast">Der Akkustand von {device} ist niedrig: {battery_level} %. {low_battery_minutes_message}</string>
+    <string name="missing_permissions">Damit du Android Auto verwenden kannst, musst du in den Einstellungen die erforderlichen Berechtigungen erteilen</string>
+    <string name="no_connected_devices_both">Verbinde ein kompatibles Android-Gerät über USB oder Bluetooth, um Android Auto zu starten.</string>
+    <string name="no_connected_devices_wired_only">Schließe ein kompatibles Android-Gerät über USB an, um Android Auto zu starten.</string>
+    <string name="poor_wifi_toast">Die kabellose Verbindung zu deinem Smartphone ist instabil. Gehe mit dem Gerät näher zum Zugangspunkt oder verbinde es über USB.</string>
+    <string name="pref_open_source_licenses">Open-Source-Lizenzen</string>
+    <string name="pref_version">Version</string>
+    <string name="settings">Einstellungen</string>
+    <string name="ssl_error_help">Eine Verbindung zu Android Auto kann nicht hergestellt werden. Aktualisiere das Datum, die Uhrzeit bzw. die Systemsoftware.</string>
+    <string name="start_ap_failed">Kabellose Projektion konnte nicht gestartet werden. Versuch es noch einmal.</string>
+    <string name="time_arrived">Du hast das Ziel erreicht</string>
+    <string name="time_format_days">{number_days,plural, =1{# Tag}other{# Tage}}</string>
+    <string name="time_format_days_and_hours">%1$s %2$s</string>
+    <string name="time_format_hours">{number_hours,plural, =1{# Stunde}other{# Stunden}}</string>
+    <string name="time_format_hours_and_minutes">%1$s %2$s</string>
+    <string name="time_format_minutes">{number_minutes,plural, =1{# Minute}other{# Minuten}}</string>
+    <string name="unable_to_start_wireless">Sitzung mit Android Auto Wireless konnte nicht gestartet werden.</string>
+    <string name="usb_ping_timeout_occurred">Verbindung mit Android Auto wurde getrennt. Prüfe das USB-Kabel.</string>
+    <string name="wireless_available">Kabellos</string>
+    <string name="wireless_error_occurred">Kabellose Verbindung mit Android Auto wurde getrennt.</string>
+    <string name="wireless_failed_location_services_disabled">Kabellose Verbindung kann nicht hergestellt werden, weil die Standortdienste deaktiviert sind.</string>
+</resources>

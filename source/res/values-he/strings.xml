@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aa_disconnected">אין חיבור ל-Android Auto.</string>
+    <string name="aa_pending">לגישה למדיה, יש להפעיל את Android Auto.</string>
+    <string name="app_name">KoniX-Auto</string>
+    <string name="connect_to_wireless_device">התחברות אל %s</string>
+    <string name="connecting_to_phone">מתבצע קישור של Android Auto לטלפון…</string>
+    <string name="device_notification_channel_name">מכשירים זמינים</string>
+    <string name="exit">יציאה</string>
+    <string name="instruct_user_to_check_phone">כדי להשתמש ב-Android Auto, צריך לחנות ולפעול לפי ההוראות בטלפון שלך.</string>
+    <string name="instruct_user_to_replug_usb_device">יש לנתק ולחבר מחדש את כבל ה-USB של הטלפון כדי להפעיל את Android Auto.</string>
+    <string name="low_battery_minutes_toast">{num_minutes_remaining,plural, =0{נותרה פחות מדקה.}=1{נותרה דקה אחת.}two{נותרו # דקות.}many{נותרו # דקות.}other{נותרו # דקות.}}</string>
+    <string name="low_battery_percentage_toast">במכשיר {device} רמת טעינת הסוללה נמוכה: {battery_level}%. {low_battery_minutes_message}</string>
+    <string name="missing_permissions">"כדי להשתמש ב-Android Auto, צריך לתת את ההרשאות הנחוצות ב'הגדרות'"</string>
+    <string name="no_connected_devices_both">כדי להפעיל את Android Auto, יש להתחבר למכשיר Android תואם בעזרת USB או לבצע לו התאמה דרך Bluetooth.</string>
+    <string name="no_connected_devices_wired_only">כדי להפעיל את Android Auto, יש לחבר מכשיר Android תואם באמצעות USB.</string>
+    <string name="poor_wifi_toast">החיבור האלחוטי באמצעות הטלפון לא יציב. יש לקרב את הטלפון אל נקודת הגישה (AP) או לחבר אותו באמצעות USB.</string>
+    <string name="pref_open_source_licenses">רישיונות קוד פתוח</string>
+    <string name="pref_version">גרסה</string>
+    <string name="settings">הגדרות</string>
+    <string name="ssl_error_help">לא ניתן להתחבר אל Android Auto. כדאי לנסות לעדכן את התאריך, את השעה או את תוכנת המערכת.</string>
+    <string name="start_ap_failed">הפעלת ההקרנה האלחוטית נכשלה. יש לנסות שוב.</string>
+    <string name="time_arrived">הגעת.</string>
+    <string name="time_format_days">{number_days,plural, =1{יום אחד (#)}two{יומיים (#)}many{# ימים}other{# ימים}}</string>
+    <string name="time_format_days_and_hours">%1$s %2$s</string>
+    <string name="time_format_hours">{number_hours,plural, =1{שעה אחת (#)}two{שעתיים (#)}many{# שעות}other{# שעות}}</string>
+    <string name="time_format_hours_and_minutes">%1$s %2$s</string>
+    <string name="time_format_minutes">{number_minutes,plural, =1{דקה אחת (#)}two{# דקות}many{# דקות}other{# דקות}}</string>
+    <string name="unable_to_start_wireless">לא ניתן להפעיל סשן של חיבור אלחוטי ל-Android Auto.</string>
+    <string name="usb_ping_timeout_occurred">אירעה שגיאה בחיבור ל-Android Auto. יש לבדוק את כבל ה-USB.</string>
+    <string name="wireless_available">אלחוטי</string>
+    <string name="wireless_error_occurred">אירעה שגיאה בחיבור האלחוטי ל-Android Auto.</string>
+    <string name="wireless_failed_location_services_disabled">לא ניתן להפעיל את החיבור האלחוטי כי שירותי המיקום מושבתים.</string>
+</resources>

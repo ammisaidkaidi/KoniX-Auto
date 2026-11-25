@@ -1,0 +1,7 @@
+# Signing material must never enter this repo
+*.jks
+*.keystore
+certificat/
+**/assets/credentials/
+CREDENTIALS*
+PASSWORDS*

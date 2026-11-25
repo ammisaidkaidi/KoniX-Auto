@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aa_disconnected">[Åñðŕöîð Åûţö îš ðîšçöññéçţéð. one two three four five six seven]</string>
+    <string name="aa_pending">[Ļåûñçĥ Åñðŕöîð Åûţö ţö åççéšš méðîå. one two three four five six seven eight]</string>
+    <string name="app_name">KoniX-Auto</string>
+    <string name="connect_to_wireless_device">[Çöññéçţ ţö ᐅ%sᐊ one two three]</string>
+    <string name="connecting_to_phone">[Çöññéçţîñĝ Åñðŕöîð Åûţö ŵîţĥ þĥöñé… one two three four five six seven eight]</string>
+    <string name="device_notification_channel_name">[Åvåîļåбļé ðévîçéš one two three]</string>
+    <string name="exit">[Éxîţ one]</string>
+    <string name="instruct_user_to_check_phone">[Ţö ûšé Åñðŕöîð Åûţö, þåŕķ åñð ƒöļļöŵ ţĥé îñšţŕûçţîöñš öñ ýöûŕ þĥöñé one two three four five six seven eight nine ten eleven twelve thirteen]</string>
+    <string name="instruct_user_to_replug_usb_device">"[Ţö šţåŕţ Åñðŕöîð Åûţö, ðîšçöññéçţ åñð ŕéçöññéçţ ýöûŕ þĥöñé'š ÛŠБ çåбļé. one two three four five six seven eight nine ten eleven twelve thirteen]"</string>
+    <string name="low_battery_minutes_toast">{num_minutes_remaining,plural, =0{[Ļéšš ţĥåñ å mîñûţé ŕémåîñîñĝ. one two three four five six seven]}=1{[# mîñûţé ŕémåîñîñĝ. one two three]}other{[# mîñûţéš ŕémåîñîñĝ. one two three]}}</string>
+    <string name="low_battery_percentage_toast">[{ðévîçé} ĥåš å ļöŵ бåţţéŕý: {бåţţéŕý_ļévéļ}%. {ļöŵ_бåţţéŕý_mîñûţéš_méššåĝé} one two three four five six seven eight nine ten eleven twelve thirteen fourteen]</string>
+    <string name="missing_permissions">[Ţö ûšé Åñðŕöîð Åûţö, ýöû mûšţ ĝŕåñţ ŕéqûîŕéð þéŕmîššîöñš îñ Šéţţîñĝš one two three four five six seven eight nine ten eleven twelve thirteen]</string>
+    <string name="no_connected_devices_both">[Þļéåšé çöññéçţ vîå ÛŠБ öŕ þåîŕ vîå бļûéţööţĥ, å çömþåţîбļé Åñðŕöîð ðévîçé ţö ŕûñ Åñðŕöîð Åûţö. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen]</string>
+    <string name="no_connected_devices_wired_only">[Þļéåšé çöññéçţ å çömþåţîбļé Åñðŕöîð ðévîçé vîå ÛŠБ ţö ŕûñ Åñðŕöîð Åûţö. one two three four five six seven eight nine ten eleven twelve thirteen]</string>
+    <string name="poor_wifi_toast">[Ţĥé ŵîŕéļéšš çöññéçţîöñ ŵîţĥ ýöûŕ þĥöñé îš ûñšţåбļé. Þļéåšé mövé ýöûŕ þĥöñé çļöšéŕ ţö ţĥé åççéšš þöîñţ öŕ çöññéçţ vîå ÛŠБ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen]</string>
+    <string name="pref_open_source_licenses">[Öþéñ Šöûŕçé Ļîçéñšéš one two three]</string>
+    <string name="pref_version">[Véŕšîöñ one]</string>
+    <string name="settings">[Šéţţîñĝš one]</string>
+    <string name="ssl_error_help">[Çåñ’ţ çöññéçţ ţö Åñðŕöîð Åûţö. Ţŕý ûþðåţîñĝ ðåţé, ţîmé, öŕ šýšţém šöƒţŵåŕé. one two three four five six seven eight nine ten eleven twelve thirteen fourteen]</string>
+    <string name="start_ap_failed">[Fåîļéð ţö šţåŕţ ŵîŕéļéšš þŕöĵéçţîöñ. Þļéåšé ţŕý åĝåîñ. one two three four five six seven eight nine ten eleven]</string>
+    <string name="time_arrived">[Ýöû ĥåvé åŕŕîvéð. one two three]</string>
+    <string name="time_format_days">{number_days,plural, =1{[# ð one]}other{[# ð one]}}</string>
+    <string name="time_format_days_and_hours">%1$s %2$s</string>
+    <string name="time_format_hours">{number_hours,plural, =1{[# ĥŕ one]}other{[# ĥŕ one]}}</string>
+    <string name="time_format_hours_and_minutes">%1$s %2$s</string>
+    <string name="time_format_minutes">{number_minutes,plural, =1{[# mîñ one]}other{[# mîñ one]}}</string>
+    <string name="unable_to_start_wireless">[Ûñåбļé ţö šţåŕţ Åñðŕöîð Åûţö ŵîŕéļéšš šéššîöñ. one two three four five six seven eight nine ten]</string>
+    <string name="usb_ping_timeout_occurred">[Å çöññéçţîöñ éŕŕöŕ ĥåš öççûŕŕéð ŵîţĥ Åñðŕöîð Åûţö. Þļéåšé çĥéçķ ţĥé ÛŠБ çåбļé. one two three four five six seven eight nine ten eleven twelve thirteen fourteen]</string>
+    <string name="wireless_available">[Ŵîŕéļéšš one]</string>
+    <string name="wireless_error_occurred">[Å ŵîŕéļéšš çöññéçţîöñ éŕŕöŕ ĥåš öççûŕŕéð ŵîţĥ Åñðŕöîð Åûţö. one two three four five six seven eight nine ten eleven twelve]</string>
+    <string name="wireless_failed_location_services_disabled">[Ûñåбļé ţö šţåŕţ ŵîŕéļéšš çöññéçţîöñ ðûé ţö Ļöçåţîöñ Šéŕvîçéš åŕé ðîšåбļéð. one two three four five six seven eight nine ten eleven twelve thirteen fourteen]</string>
+</resources>

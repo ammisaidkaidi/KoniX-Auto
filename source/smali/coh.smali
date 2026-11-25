@@ -1,0 +1,76 @@
+.class final Lcoh;
+.super Ljava/lang/Object;
+.source "PG"
+
+# interfaces
+.implements Ljava/lang/Iterable;
+
+
+# instance fields
+.field final synthetic a:Ljava/lang/CharSequence;
+
+.field final synthetic b:Lcoi;
+
+
+# direct methods
+.method public constructor <init>(Lcoi;Ljava/lang/CharSequence;)V
+    .locals 0
+
+    iput-object p1, p0, Lcoh;->b:Lcoi;
+
+    iput-object p2, p0, Lcoh;->a:Ljava/lang/CharSequence;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final iterator()Ljava/util/Iterator;
+    .locals 2
+
+    iget-object v0, p0, Lcoh;->b:Lcoi;
+
+    iget-object v1, p0, Lcoh;->a:Ljava/lang/CharSequence;
+
+    invoke-virtual {v0, v1}, Lcoi;->d(Ljava/lang/CharSequence;)Ljava/util/Iterator;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 2
+    const/16 v1, 0x5b
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    .line 3
+    const-string v2, ", "
+
+    invoke-static {v0, v1, v2}, Lex;->y(Ljava/lang/StringBuilder;Ljava/util/Iterator;Ljava/lang/String;)V
+
+    .line 4
+    const/16 v1, 0x5d
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <usb-device product-id="11520" vendor-id="6353" />
+    <usb-device product-id="11521" vendor-id="6353" />
+    <usb-device product-id="11524" vendor-id="6353" />
+    <usb-device product-id="11525" vendor-id="6353" />
+    <usb-device vendor-id="13211" />
+    <usb-device vendor-id="4817" />
+    <usb-device vendor-id="6353" />
+    <usb-device vendor-id="1256" />
+    <usb-device vendor-id="10007" />
+    <usb-device vendor-id="8921" />
+    <usb-device vendor-id="10864" />
+    <usb-device vendor-id="11669" />
+    <usb-device vendor-id="8888" />
+    <usb-device vendor-id="4046" />
+    <usb-device vendor-id="2996" />
+    <usb-device vendor-id="4100" />
+    <usb-device vendor-id="2821" />
+    <usb-device vendor-id="11221" />
+    <usb-device vendor-id="6018" />
+    <usb-device vendor-id="3725" />
+    <usb-device vendor-id="1478" />
+    <usb-aoap-accessory manufacturer="Android" model="Android Auto" version="1.0" />
+</resources>

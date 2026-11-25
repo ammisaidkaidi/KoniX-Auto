@@ -1,0 +1,28 @@
+version: 2.11.1
+apkFileName: KoniX_final.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 28
+  targetSdkVersion: 31
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 300063473
+  versionName: 1.0.413336740-release
+sharedLibrary: false
+sparseResources: false
+compactEntries: false
+doNotCompress:
+- arsc
+- png
+- assets/empty_asset_generated_by_bazel~
+- assets/phenotype/com_google_android_apps_auto_aareceiver_package_metadata.binarypb
+- assets/phenotype/com_google_android_libraries_consentverifier_package_metadata.binarypb
+- res/raw/build_data.pb
+- res/raw/com_google_android_apps_auto_aareceiver_registration_info_release.binarypb
+- res/raw/com_google_android_libraries_consentverifier_registration_info.binarypb

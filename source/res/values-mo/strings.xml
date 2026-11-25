@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aa_disconnected">Android Auto nu este conectat.</string>
+    <string name="aa_pending">Lansați Android Auto pentru a accesa conținutul media</string>
+    <string name="app_name">KoniX-Auto</string>
+    <string name="connect_to_wireless_device">Conectați-vă la %s</string>
+    <string name="connecting_to_phone">Android Auto se conectează la telefon…</string>
+    <string name="device_notification_channel_name">Dispozitive disponibile</string>
+    <string name="exit">Ieșiți</string>
+    <string name="instruct_user_to_check_phone">Pentru a folosi Android Auto, parcați și urmați instrucțiunile de pe telefon</string>
+    <string name="instruct_user_to_replug_usb_device">Pentru a porni Android Auto, deconectați și reconectați cablul USB al telefonului.</string>
+    <string name="low_battery_minutes_toast">{num_minutes_remaining,plural, =0{A rămas mai puțin de un minut.}=1{A mai rămas un minut.}few{Au mai rămas # minute.}other{Au mai rămas # de minute.}}</string>
+    <string name="low_battery_percentage_toast">{device} are bateria descărcată: {battery_level}%. {low_battery_minutes_message}</string>
+    <string name="missing_permissions">Pentru a folosi Android Auto, trebuie să acordați permisiunile necesare în Setări</string>
+    <string name="no_connected_devices_both">Conectați un dispozitiv Android compatibil prin USB sau prin Bluetooth pentru a folosi Android Auto.</string>
+    <string name="no_connected_devices_wired_only">Conectați un dispozitiv Android compatibil prin USB pentru a folosi Android Auto.</string>
+    <string name="poor_wifi_toast">Conexiunea wireless cu telefonul este instabilă. Mutați telefonul mai aproape de punctul de acces sau conectați-vă prin USB.</string>
+    <string name="pref_open_source_licenses">Licențe open source</string>
+    <string name="pref_version">Versiune</string>
+    <string name="settings">Setări</string>
+    <string name="ssl_error_help">Nu se poate conecta la Android Auto. Actualizați data, ora sau software-ul de sistem.</string>
+    <string name="start_ap_failed">Proiecția wireless nu a putut porni. Încercați din nou.</string>
+    <string name="time_arrived">Ați sosit.</string>
+    <string name="time_format_days">{number_days,plural, =1{# z}few{# z}other{# z}}</string>
+    <string name="time_format_days_and_hours">%1$s %2$s</string>
+    <string name="time_format_hours">{number_hours,plural, =1{# h}few{# h}other{# h}}</string>
+    <string name="time_format_hours_and_minutes">%1$s %2$s</string>
+    <string name="time_format_minutes">{number_minutes,plural, =1{# min.}few{# min.}other{# min.}}</string>
+    <string name="unable_to_start_wireless">Nu s-a putut începe sesiunea Android Auto wireless.</string>
+    <string name="usb_ping_timeout_occurred">A apărut o eroare de conexiune în Android Auto. Verificați cablul USB.</string>
+    <string name="wireless_available">Wireless</string>
+    <string name="wireless_error_occurred">A apărut o eroare de conexiune wireless în Android Auto.</string>
+    <string name="wireless_failed_location_services_disabled">Nu s-a putut stabili conexiunea wireless, deoarece Serviciile de localizare sunt dezactivate.</string>
+</resources>

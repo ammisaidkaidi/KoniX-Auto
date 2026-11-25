@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aa_disconnected">Android Auto 連線中斷。</string>
+    <string name="aa_pending">必須啟動 Android Auto 才能存取媒體。</string>
+    <string name="abc_action_bar_up_description">向上瀏覽</string>
+    <string name="abc_action_mode_done">完成</string>
+    <string name="abc_capital_off">關閉</string>
+    <string name="abc_capital_on">開啟</string>
+    <string name="abc_menu_alt_shortcut_label">Alt +</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl +</string>
+    <string name="abc_menu_delete_shortcut_label">刪除</string>
+    <string name="abc_menu_enter_shortcut_label">Enter 鍵</string>
+    <string name="abc_menu_function_shortcut_label">Fn +</string>
+    <string name="abc_menu_meta_shortcut_label">Meta +</string>
+    <string name="abc_menu_shift_shortcut_label">Shift +</string>
+    <string name="abc_menu_space_shortcut_label">空白鍵</string>
+    <string name="abc_menu_sym_shortcut_label">Sym +</string>
+    <string name="abc_prepend_shortcut_label">Menu +</string>
+    <string name="abc_search_hint">搜尋…</string>
+    <string name="abc_searchview_description_clear">清除查詢</string>
+    <string name="abc_searchview_description_search">搜尋</string>
+    <string name="abc_searchview_description_submit">提交查詢</string>
+    <string name="abc_searchview_description_voice">語音搜尋</string>
+    <string name="abc_toolbar_collapse_description">收合</string>
+    <string name="app_name">KoniX-Auto</string>
+    <string name="car_ui_alert_dialog_default_button">關閉</string>
+    <string name="car_ui_preference_switch_off">已關閉</string>
+    <string name="car_ui_preference_switch_on">已開啟</string>
+    <string name="car_ui_restricted_while_driving">無法在駕駛時使用此功能</string>
+    <string name="car_ui_scrollbar_page_down_button">向下捲動</string>
+    <string name="car_ui_scrollbar_page_up_button">向上捲動</string>
+    <string name="car_ui_scrolling_limited_message">捲動功能在駕駛時受限制</string>
+    <string name="car_ui_toolbar_default_search_hint">搜尋…</string>
+    <string name="car_ui_toolbar_menu_item_overflow_title">展開式選單</string>
+    <string name="car_ui_toolbar_menu_item_search_title">搜尋</string>
+    <string name="car_ui_toolbar_menu_item_settings_title">設定</string>
+    <string name="car_ui_toolbar_nav_icon_content_description">返回</string>
+    <string name="common_google_play_services_enable_button">啟用</string>
+    <string name="common_google_play_services_enable_text">您必須啟用 Google Play 服務，方可執行「%1$s」。</string>
+    <string name="common_google_play_services_enable_title">啟用 Google Play 服務</string>
+    <string name="common_google_play_services_install_button">安裝</string>
+    <string name="common_google_play_services_install_text">您的裝置尚未安裝 Google Play 服務，因此無法執行「%1$s」。</string>
+    <string name="common_google_play_services_install_title">安裝 Google Play 服務</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play 服務的適用範圍</string>
+    <string name="common_google_play_services_notification_ticker">Google Play 服務錯誤</string>
+    <string name="common_google_play_services_unknown_issue">「%1$s」存取 Google Play 服務時發生問題。請稍後再試一次。</string>
+    <string name="common_google_play_services_unsupported_text">您的裝置不支援 Google Play 服務，因此無法執行「%1$s」。</string>
+    <string name="common_google_play_services_update_button">更新</string>
+    <string name="common_google_play_services_update_text">您必須更新「Google Play 服務」，才能執行 %1$s。</string>
+    <string name="common_google_play_services_update_title">更新 Google Play 服務</string>
+    <string name="common_google_play_services_updating_text">正在更新 Google Play 服務，更新完成後方可執行「%1$s」。</string>
+    <string name="connect_to_wireless_device">連線到「%s」</string>
+    <string name="connecting_to_phone">Android Auto 正在與手機連線…</string>
+    <string name="copy">複製</string>
+    <string name="device_notification_channel_name">可用的裝置</string>
+    <string name="exit">結束</string>
+    <string name="expand_button_title">進階</string>
+    <string name="instruct_user_to_check_phone">如要使用 Android Auto，請停好車並按照手機上的指示操作。</string>
+    <string name="instruct_user_to_replug_usb_device">如要啟動 Android Auto，請拔下手機的 USB 傳輸線再重新接上。</string>
+    <string name="low_battery_minutes_toast">{num_minutes_remaining,plural, =0{可用時間還剩不到 1 分鐘。}=1{可用時間還有 # 分鐘。}other{可用時間還有 # 分鐘。}}</string>
+    <string name="low_battery_percentage_toast">「{device}」的電量過低：{battery_level}%。{low_battery_minutes_message}</string>
+    <string name="missing_permissions">如要使用 Android Auto，請前往「設定」授予必要權限</string>
+    <string name="no_connected_devices_both">請透過 USB 連接相容的 Android 裝置 (或透過藍牙配對)，以便執行 Android Auto。</string>
+    <string name="no_connected_devices_wired_only">請透過 USB 連接相容的 Android 裝置，以便執行 Android Auto。</string>
+    <string name="not_set">未設定</string>
+    <string name="poor_wifi_toast">存取點與手機之間的無線連線不穩定。請縮短手機與存取點之間的距離，或者改為透過 USB 連線。</string>
+    <string name="pref_open_source_licenses">開放原始碼授權</string>
+    <string name="pref_version">版本</string>
+    <string name="preference_copied">「%1$s」已複製到剪貼簿。</string>
+    <string name="settings">設定</string>
+    <string name="ssl_error_help">無法連線到 Android Auto，建議你更新日期、時間或系統軟體。</string>
+    <string name="start_ap_failed">無法啟動無線投影，請再試一次。</string>
+    <string name="summary_collapsed_preference_list">%1$s、%2$s</string>
+    <string name="time_arrived">你已到達目的地。</string>
+    <string name="time_format_days">{number_days,plural, =1{# 天}other{# 天}}</string>
+    <string name="time_format_days_and_hours">%1$s %2$s</string>
+    <string name="time_format_hours">{number_hours,plural, =1{# 小時}other{# 小時}}</string>
+    <string name="time_format_hours_and_minutes">%1$s %2$s</string>
+    <string name="time_format_minutes">{number_minutes,plural, =1{# 分鐘}other{# 分鐘}}</string>
+    <string name="unable_to_start_wireless">無法開始執行 Android Auto 無線功能的工作階段。</string>
+    <string name="usb_ping_timeout_occurred">Android Auto 的連線發生錯誤，請檢查 USB 傳輸線。</string>
+    <string name="v7_preference_off">關閉</string>
+    <string name="v7_preference_on">開啟</string>
+    <string name="wireless_available">無線</string>
+    <string name="wireless_error_occurred">Android Auto 的無線連線發生錯誤。</string>
+    <string name="wireless_failed_location_services_disabled">定位服務已停用，因此系統無法建立無線連線。</string>
+</resources>

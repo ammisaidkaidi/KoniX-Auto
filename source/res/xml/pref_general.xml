@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/app_name"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference android:title="@string/pref_open_source_licenses" android:key="@string/open_source_licenses_key" />
+    <Preference android:title="@string/pref_version" android:key="@string/version_key" />
+    <PreferenceCategory android:title="@string/pref_developer_settings" android:key="@string/developer_mode_section_key" app:isPreferenceVisible="false">
+        <SwitchPreference android:title="@string/pref_enable_dev_settings" android:key="@string/enable_developer_mode_key" />
+        <SwitchPreference android:title="@string/pref_enable_wireless" android:key="@string/enable_wifi_key" android:summaryOff="@string/pref_enable_wireless_summary" />
+        <ListPreference android:entries="@array/launch_mode_override_entries" android:title="@string/pref_launch_mode_projection" android:key="@string/launch_mode_key" android:defaultValue="@string/launch_mode_override_auto" android:entryValues="@array/launch_mode_override_entries" app:useSimpleSummaryProvider="true" />
+        <ListPreference android:entries="@array/projection_ui_mode_entries" android:title="@string/pref_projection_ui_mode" android:key="@string/projection_ui_mode_key" android:entryValues="@array/projection_ui_mode_entries" app:useSimpleSummaryProvider="true" />
+        <MultiSelectListPreference android:entries="@array/projection_ui_mode_variation_entries" android:title="@string/pref_projection_ui_mode_variation" android:key="@string/projection_ui_mode_variation_key" android:entryValues="@array/projection_ui_mode_variation_entries" app:useSimpleSummaryProvider="true" />
+        <SwitchPreference android:enabled="false" android:title="@string/pref_video_latency_checker_title" android:key="@string/video_latency_checker_key" android:defaultValue="false" android:summaryOn="@string/pref_video_latency_checker_summary_on" android:summaryOff="@string/pref_video_latency_checker_summary_off" />
+        <Preference android:visible="false" android:title="@string/pref_primes_debug_activity" android:key="@string/primes_debug_activity_key" />
+    </PreferenceCategory>
+</PreferenceScreen>

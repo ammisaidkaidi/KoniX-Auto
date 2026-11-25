@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="aa_disconnected">O Android Auto está desconectado.</string>
+    <string name="aa_pending">Inicie o Android Auto p/ acessar mídia.</string>
+    <string name="abc_action_bar_up_description">Navegar para cima</string>
+    <string name="abc_action_mode_done">Concluído</string>
+    <string name="abc_capital_off">DESATIVADO</string>
+    <string name="abc_capital_on">ATIVADO</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">espaço</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">Pesquisar…</string>
+    <string name="abc_searchview_description_clear">Limpar consulta</string>
+    <string name="abc_searchview_description_search">Pesquisar</string>
+    <string name="abc_searchview_description_submit">Enviar consulta</string>
+    <string name="abc_searchview_description_voice">Pesquisa por voz</string>
+    <string name="abc_toolbar_collapse_description">Recolher</string>
+    <string name="app_name">KoniX-Auto</string>
+    <string name="car_ui_alert_dialog_default_button">Fechar</string>
+    <string name="car_ui_preference_switch_off">Desativada</string>
+    <string name="car_ui_preference_switch_on">Ativada</string>
+    <string name="car_ui_restricted_while_driving">Recurso indisponível enquanto você dirige</string>
+    <string name="car_ui_scrollbar_page_down_button">Rolar para baixo</string>
+    <string name="car_ui_scrollbar_page_up_button">Rolar para cima</string>
+    <string name="car_ui_scrolling_limited_message">O recurso de rolagem fica limitado enquanto você dirige</string>
+    <string name="car_ui_toolbar_default_search_hint">Pesquisar…</string>
+    <string name="car_ui_toolbar_menu_item_overflow_title">Menu flutuante</string>
+    <string name="car_ui_toolbar_menu_item_search_title">Pesquisa</string>
+    <string name="car_ui_toolbar_menu_item_settings_title">Configurações</string>
+    <string name="car_ui_toolbar_nav_icon_content_description">Voltar</string>
+    <string name="connect_to_wireless_device">Conectar ao dispositivo %s</string>
+    <string name="connecting_to_phone">Conectando o Android Auto ao smartphone…</string>
+    <string name="copy">Copiar</string>
+    <string name="device_notification_channel_name">Dispositivos disponíveis</string>
+    <string name="exit">Sair</string>
+    <string name="expand_button_title">Avançado</string>
+    <string name="instruct_user_to_check_phone">Para usar o Android Auto, estacione o carro e siga as instruções exibidas no seu smartphone.</string>
+    <string name="instruct_user_to_replug_usb_device">Para iniciar o Android Auto, desconecte e reconecte o cabo USB do smartphone.</string>
+    <string name="low_battery_minutes_toast">{num_minutes_remaining,plural, =0{Resta menos de um minuto.}=1{Resta # minuto.}one{Resta # minuto.}other{Restam # minutos.}}</string>
+    <string name="low_battery_percentage_toast">O dispositivo {device} está com pouca bateria: {battery_level}%. {low_battery_minutes_message}</string>
+    <string name="missing_permissions">Para usar o Android Auto, é necessário conceder as permissões necessárias em \"Configurações\"</string>
+    <string name="no_connected_devices_both">Para usar o Android Auto, conecte um dispositivo Android compatível via USB ou por Bluetooth.</string>
+    <string name="no_connected_devices_wired_only">Para usar o Android Auto, conecte um dispositivo Android compatível via USB.</string>
+    <string name="not_set">Não definido</string>
+    <string name="poor_wifi_toast">A conexão sem fio do seu smartphone é instável. Aproxime o dispositivo do ponto de acesso ou use uma conexão via USB.</string>
+    <string name="pref_open_source_licenses">Licenças de código aberto</string>
+    <string name="pref_version">Versão</string>
+    <string name="preference_copied">\"%1$s\" copiado para a área de transferência.</string>
+    <string name="preferences_license_title">Licenças de código aberto</string>
+    <string name="settings">Configurações</string>
+    <string name="ssl_error_help">Não é possível se conectar ao Android Auto. Tente atualizar a data, a hora ou o software do sistema.</string>
+    <string name="start_ap_failed">Falha ao iniciar a projeção sem fio. Tente novamente.</string>
+    <string name="summary_collapsed_preference_list">%1$s, %2$s</string>
+    <string name="time_arrived">Você chegou.</string>
+    <string name="time_format_days">{number_days,plural, =1{# dia}one{# dia}other{# dias}}</string>
+    <string name="time_format_days_and_hours">%1$s %2$s</string>
+    <string name="time_format_hours">{number_hours,plural, =1{# h}one{# h}other{# h}}</string>
+    <string name="time_format_hours_and_minutes">%1$s %2$s</string>
+    <string name="time_format_minutes">{number_minutes,plural, =1{# min}one{# min}other{# min}}</string>
+    <string name="unable_to_start_wireless">Não foi possível iniciar a sessão sem fio do Android Auto.</string>
+    <string name="usb_ping_timeout_occurred">Ocorreu um erro de conexão com o Android Auto. Verifique o cabo USB.</string>
+    <string name="v7_preference_off">DESATIVADO</string>
+    <string name="v7_preference_on">ATIVADO</string>
+    <string name="wireless_available">Sem fio</string>
+    <string name="wireless_error_occurred">Ocorreu um erro na conexão sem fio do Android Auto.</string>
+    <string name="wireless_failed_location_services_disabled">Não foi possível iniciar a conexão sem fio porque os Serviços de localização estão desativados.</string>
+</resources>
