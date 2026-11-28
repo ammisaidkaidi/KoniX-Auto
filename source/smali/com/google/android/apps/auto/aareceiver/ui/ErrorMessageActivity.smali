@@ -49,7 +49,7 @@
     invoke-virtual {p0, v0}, Lcom/google/android/apps/auto/aareceiver/ui/ErrorMessageActivity;->setContentView(I)V
 
     :try_start_0
-    invoke-static {p0}, Lcom/achour/tweaks/Gal;->rotateActivityRoot(Landroid/app/Activity;)V
+    invoke-static {p0}, Lx/d;->rotateActivityRoot(Landroid/app/Activity;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

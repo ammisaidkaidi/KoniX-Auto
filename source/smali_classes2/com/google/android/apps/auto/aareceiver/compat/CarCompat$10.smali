@@ -74,7 +74,7 @@
 
     if-ne v0, v1, :cond_1
 
-    invoke-static {p2}, Lcom/achour/tweaks/V5;->shouldSkipWirelessNudge(Landroid/bluetooth/BluetoothDevice;)Z
+    invoke-static {p2}, Lx/g;->shouldSkipWirelessNudge(Landroid/bluetooth/BluetoothDevice;)Z
 
     move-result v0
 
@@ -87,7 +87,7 @@
 
     const-wide/16 v1, 0xed8
 
-    invoke-static {p1, v0, p2, v1, v2}, Lcom/achour/tweaks/V6;->aclAttempt(Landroid/content/Context;Landroid/bluetooth/BluetoothAdapter;Landroid/bluetooth/BluetoothDevice;J)V
+    invoke-static {p1, v0, p2, v1, v2}, Lx/i;->aclAttempt(Landroid/content/Context;Landroid/bluetooth/BluetoothAdapter;Landroid/bluetooth/BluetoothDevice;J)V
 
     .line 1343
     :cond_1

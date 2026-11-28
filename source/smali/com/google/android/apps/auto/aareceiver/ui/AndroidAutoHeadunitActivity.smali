@@ -125,12 +125,12 @@
 
     invoke-virtual {p0, v0}, Ltk;->setContentView(I)V
 
-    invoke-static {p0}, Lcom/achour/tweaks/Splash;->show(Landroid/app/Activity;)V
+    invoke-static {p0}, Lx/f;->show(Landroid/app/Activity;)V
 
     :try_start_0
     const v0, 0x7f090119
 
-    invoke-static {p0, v0}, Lcom/achour/tweaks/Gal;->rotateViewById(Landroid/app/Activity;I)V
+    invoke-static {p0, v0}, Lx/d;->rotateViewById(Landroid/app/Activity;I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

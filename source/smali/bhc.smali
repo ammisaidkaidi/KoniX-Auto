@@ -105,11 +105,11 @@
 .method public static b(IILandroid/view/Display;)Ljava/util/List;
     .locals 8
 
-    invoke-static {p0}, Lcom/achour/tweaks/V7;->screenW(I)I
+    invoke-static {p0}, Lx/l;->screenW(I)I
 
     move-result p0
 
-    invoke-static {p1}, Lcom/achour/tweaks/V7;->screenH(I)I
+    invoke-static {p1}, Lx/l;->screenH(I)I
 
     move-result p1
 
@@ -121,7 +121,7 @@
     .line 2
     invoke-virtual {p2, v0}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
 
-    invoke-static {}, Lcom/achour/tweaks/P;->fps()I
+    invoke-static {}, Lx/a;->fps()I
 
     move-result v1
 

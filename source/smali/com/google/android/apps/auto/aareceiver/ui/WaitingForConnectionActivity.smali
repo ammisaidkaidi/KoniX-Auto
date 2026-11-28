@@ -263,14 +263,14 @@
     .line 4
     invoke-virtual {p0, p1}, Ltk;->setContentView(I)V
 
-    invoke-static {p0}, Lcom/achour/tweaks/Splash;->show(Landroid/app/Activity;)V
+    invoke-static {p0}, Lx/f;->show(Landroid/app/Activity;)V
 
-    invoke-static {p0}, Lcom/achour/tweaks/V7;->addWaitingBar(Landroid/app/Activity;)V
+    invoke-static {p0}, Lx/l;->addWaitingBar(Landroid/app/Activity;)V
 
     :try_start_0
-    invoke-static {p0}, Lcom/achour/tweaks/Gal;->rotateActivityRoot(Landroid/app/Activity;)V
+    invoke-static {p0}, Lx/d;->rotateActivityRoot(Landroid/app/Activity;)V
 
-    invoke-static {p0}, Lcom/achour/tweaks/Gal;->maybeOnboard(Landroid/app/Activity;)V
+    invoke-static {p0}, Lx/d;->maybeOnboard(Landroid/app/Activity;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

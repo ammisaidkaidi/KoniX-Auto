@@ -552,7 +552,7 @@
 
     invoke-static {p0}, Lcom/google/android/apps/auto/aareceiver/compat/CarCompat;->initPersistentService(Landroid/app/Service;)V
 
-    invoke-static {p0}, Lcom/achour/tweaks/Bubble;->start(Landroid/content/Context;)V
+    invoke-static {p0}, Lx/b;->start(Landroid/content/Context;)V
 
     iget-object v0, p0, Lcom/google/android/apps/auto/aareceiver/service/PersistentService;->c:Lbat;
 

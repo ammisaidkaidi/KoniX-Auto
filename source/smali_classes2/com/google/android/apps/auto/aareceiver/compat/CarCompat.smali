@@ -2244,7 +2244,7 @@
 .method public static getAvailableWifiChannels(Landroid/car/CarProjectionManager;I)Ljava/util/List;
     .locals 1
 
-    invoke-static {}, Lcom/achour/tweaks/P;->channels()Ljava/util/List;
+    invoke-static {}, Lx/a;->channels()Ljava/util/List;
 
     move-result-object v0
 
@@ -3979,7 +3979,7 @@
 .method private static handleAttachedUsbDevice(Landroid/content/Context;Landroid/hardware/usb/UsbDevice;Z)V
     .locals 2
 
-    invoke-static {}, Lcom/achour/tweaks/P;->usb()Z
+    invoke-static {}, Lx/a;->usb()Z
 
     move-result v0
 
@@ -4117,7 +4117,7 @@
     .line 1411
     const/4 v0, 0x0
 
-    invoke-static {}, Lcom/achour/tweaks/V6;->biasReset()V
+    invoke-static {}, Lx/i;->biasReset()V
 
     :try_start_0
     invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
@@ -4239,7 +4239,7 @@
 
     .line 1425
     :cond_5
-    invoke-static {v4}, Lcom/achour/tweaks/V6;->biasSkip(Landroid/bluetooth/BluetoothDevice;)Z
+    invoke-static {v4}, Lx/i;->biasSkip(Landroid/bluetooth/BluetoothDevice;)Z
 
     move-result v5
 
@@ -4256,7 +4256,7 @@
     :cond_7
     const/4 v4, 0x0
 
-    invoke-static {}, Lcom/achour/tweaks/V6;->biasFallback()Landroid/bluetooth/BluetoothDevice;
+    invoke-static {}, Lx/i;->biasFallback()Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v4
 
@@ -4266,7 +4266,7 @@
 
     if-eqz p1, :cond_8
 
-    invoke-static {v4}, Lcom/achour/tweaks/V5;->shouldSkipWirelessNudge(Landroid/bluetooth/BluetoothDevice;)Z
+    invoke-static {v4}, Lx/g;->shouldSkipWirelessNudge(Landroid/bluetooth/BluetoothDevice;)Z
 
     move-result v2
 
@@ -4395,7 +4395,7 @@
     .locals 4
 
     :try_start_0
-    invoke-static {p0}, Lcom/achour/tweaks/V6;->onProcessStart(Landroid/content/Context;)V
+    invoke-static {p0}, Lx/i;->onProcessStart(Landroid/content/Context;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -4570,12 +4570,12 @@
     if-nez v0, :cond_3
 
     .line 1349
-    invoke-static {p0}, Lcom/achour/tweaks/V6;->btAttemptGated(Landroid/content/Context;)Z
+    invoke-static {p0}, Lx/i;->btAttemptGated(Landroid/content/Context;)Z
 
     .line 1351
     :cond_3
     :try_start_3
-    invoke-static {p0}, Lcom/achour/tweaks/V6;->selfHealDeferred(Landroid/content/Context;)V
+    invoke-static {p0}, Lx/i;->selfHealDeferred(Landroid/content/Context;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_3
 
@@ -4929,7 +4929,7 @@
 .method private static launchDisambiguationNow(Landroid/content/Context;)V
     .locals 3
 
-    invoke-static {}, Lcom/achour/tweaks/P;->allowAutoLaunch()Z
+    invoke-static {}, Lx/a;->allowAutoLaunch()Z
 
     move-result v0
 
@@ -5307,7 +5307,7 @@
 .method public static onRfcommConnected(Landroid/bluetooth/BluetoothDevice;)V
     .locals 2
 
-    invoke-static {}, Lcom/achour/tweaks/P;->onRfcommUp()V
+    invoke-static {}, Lx/a;->onRfcommUp()V
 
     .line 491
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -5389,7 +5389,7 @@
 .method public static onRfcommDisconnected(Ljava/lang/String;)V
     .locals 2
 
-    invoke-static {}, Lcom/achour/tweaks/P;->onRfcommDown()V
+    invoke-static {}, Lx/a;->onRfcommDown()V
 
     .line 499
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -5518,9 +5518,9 @@
 .method public static registerProjectionRunner(Landroid/car/CarProjectionManager;Landroid/content/Intent;)V
     .locals 3
 
-    invoke-static {p0, p1}, Lcom/achour/tweaks/P;->rememberRunner(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p0, p1}, Lx/a;->rememberRunner(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    invoke-static {}, Lcom/achour/tweaks/P;->allowAutoLaunch()Z
+    invoke-static {}, Lx/a;->allowAutoLaunch()Z
 
     move-result v0
 
@@ -6367,7 +6367,7 @@
 .method private static scheduleAutoLaunchProjectionIfReady(Landroid/content/Context;J)V
     .locals 3
 
-    invoke-static {}, Lcom/achour/tweaks/P;->allowAutoLaunch()Z
+    invoke-static {}, Lx/a;->allowAutoLaunch()Z
 
     move-result v0
 
@@ -6914,7 +6914,7 @@
 .method private static startAutoLaunchWaitLoop(Landroid/content/Context;)V
     .locals 5
 
-    invoke-static {}, Lcom/achour/tweaks/P;->allowAutoLaunch()Z
+    invoke-static {}, Lx/a;->allowAutoLaunch()Z
 
     move-result v0
 
@@ -7402,7 +7402,7 @@
 .method private static tryStartWifiTethering(Landroid/content/Context;Landroid/os/Handler;)Z
     .locals 14
 
-    invoke-static {}, Lcom/achour/tweaks/P;->wifi()Z
+    invoke-static {}, Lx/a;->wifi()Z
 
     move-result v0
 
@@ -7417,7 +7417,7 @@
 
     .line 796
     :goto_0
-    invoke-static {}, Lcom/achour/tweaks/P;->onWirelessAttempt()V
+    invoke-static {}, Lx/a;->onWirelessAttempt()V
 
     const-string v0, "AAReceiverCompat"
 
@@ -8030,11 +8030,11 @@
     :goto_0
     sget v1, Lcom/google/android/apps/auto/aareceiver/compat/CarCompat;->sCurrentProjectionState:I
 
-    invoke-static {p0, v1, v0, p1}, Lcom/achour/tweaks/V5;->onStatus(IIILandroid/car/projection/ProjectionStatus;)V
+    invoke-static {p0, v1, v0, p1}, Lx/g;->onStatus(IIILandroid/car/projection/ProjectionStatus;)V
 
-    invoke-static {p0, v1, v0, p1}, Lcom/achour/tweaks/V6;->onStatusSafe(IIILandroid/car/projection/ProjectionStatus;)V
+    invoke-static {p0, v1, v0, p1}, Lx/i;->onStatusSafe(IIILandroid/car/projection/ProjectionStatus;)V
 
-    invoke-static {p0, v1, v0, p1}, Lcom/achour/tweaks/V7;->onStatusSafe(IIILandroid/car/projection/ProjectionStatus;)V
+    invoke-static {p0, v1, v0, p1}, Lx/l;->onStatusSafe(IIILandroid/car/projection/ProjectionStatus;)V
 
     sget v1, Lcom/google/android/apps/auto/aareceiver/compat/CarCompat;->sCurrentProjectionState:I
 

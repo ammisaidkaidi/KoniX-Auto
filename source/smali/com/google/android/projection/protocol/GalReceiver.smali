@@ -64,7 +64,7 @@
     if-nez v0, :cond_0
 
     .line 3
-    invoke-static {}, Lcom/achour/tweaks/NativeLib;->load()V
+    invoke-static {}, Lx/e;->load()V
 
     :cond_0
     return-void

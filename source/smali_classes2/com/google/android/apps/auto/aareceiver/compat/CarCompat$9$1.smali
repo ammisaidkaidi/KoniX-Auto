@@ -62,7 +62,7 @@
     if-nez v0, :cond_2
 
     :try_start_0
-    invoke-static {}, Lcom/achour/tweaks/P;->usb()Z
+    invoke-static {}, Lx/a;->usb()Z
 
     move-result v2
 

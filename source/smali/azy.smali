@@ -342,13 +342,14 @@
     if-nez v10, :cond_4
 
     :cond_3
-    const-string v10, "AATweaks"
-
+    const-string v10, "\u0076\u0076\u0063\u0040\u0052\u0056\u005c\u0044"
+    invoke-static {v10}, Lx/n;->d(Ljava/lang/String;)Ljava/lang/String;
+    move-result-object v10
     const-string v11, "session gate: blocked duplicate init"
 
     invoke-static {v10, v11}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-static {}, Lcom/achour/tweaks/V5;->logGateBlock()V
+    invoke-static {}, Lx/g;->logGateBlock()V
 
     return-void
 
@@ -679,8 +680,11 @@
 
     if-ne v9, v10, :cond_5
 
-    const-string v9, "AATweaks"
+    const-string v9, "\u0076\u0076\u0063\u0040\u0052\u0056\u005c\u0044"
 
+    invoke-static {v9}, Lx/n;->d(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v9
     const-string v10, "session gate: skipping USB reset (USB session active)"
 
     invoke-static {v9, v10}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
